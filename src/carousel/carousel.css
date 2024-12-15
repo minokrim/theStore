@@ -1,0 +1,63 @@
+.carousel-box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    width: 800px; 
+    height: 190px;
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; 
+    gap: 10px; 
+}
+
+.carousel-slide {
+    min-width: 20%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.images {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.proddescription {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.4); 
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 5px; 
+    z-index: 0;
+    bottom: 100px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+@media screen and (max-width:770px) {
+    .carousel-box{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .carousel-box{
+        width: 100vw;
+    }
+}

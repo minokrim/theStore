@@ -1,0 +1,64 @@
+.quantity{
+    
+}
+
+.quantityCard{
+    border: 0.1px solid grey;
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+.quantitySection p{
+    width: max-content;
+    height: max-content;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.quantitySection input{
+    width: 25px;
+}
+.cartCheckout{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.checkoutImg{
+    width: auto;
+    height: 500px;
+}
+.cartCheckout-body{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 20px;
+    margin-right: 30px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row h5{
+    font-size: 18px;
+}
+.row p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.cartCheckout button{
+    display: flex;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    height: 30px;
+}

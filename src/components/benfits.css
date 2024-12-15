@@ -1,0 +1,27 @@
+.benefitcard{
+    display: flex;
+    width: 300px;
+    background-color: whitesmoke;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.benefitcard h3{
+    display: flex;
+    font-size: medium;
+    color: cornflowerblue;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.benefitcard p{
+    display: flex;
+    width: 90%;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.benefitcard img{
+    width: 50px;
+    height: 50px;
+}

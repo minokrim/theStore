@@ -1,0 +1,125 @@
+.productBody{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.productSec1{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+.bigimage{
+    width: 69%;
+    height: 400px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.bigimage:hover{
+    transform: scale(105%);
+}
+.smallimagecontainer{
+    display: flex;
+    padding-top: 20px;
+    justify-content: right;
+    align-items: flex-end;
+    width: 60%;
+    gap: 20px;
+}
+.smallimage{
+    width: auto;
+    height: 50px;
+    border-radius: 100px;
+}
+.smallimage:hover{
+    transform: scale(120%);
+}
+.productsec2{
+    width: 50%;
+}
+.productcart{
+    display: flex;
+    gap: 20px;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    border-radius: 20px;
+    color: white;
+    width: max-content;
+    padding: 5px;
+}
+.productcart hr{
+    margin-left: 0px;
+}
+.productcart p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productcart img{
+    height: 30px;
+}
+.productsec2 h5{
+    font-size: 35px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.h4{
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.productcartDivider{
+    margin-right: 100px;
+}
+h3{
+    font-size: 20px;
+}
+.productDescription{
+    font-weight: 400;
+    width: 90%;
+    font-size: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .productBody{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .productSec1{
+        width: 100%;
+    }
+    .bigimage{
+        width: 100%;
+        height: 300px;
+    }
+    .productcart{
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .productsec2{
+        width: 100%;
+    }
+    .productsec2 h5{
+        font-size: 30px;
+    }
+    .productcartDivider{
+        margin-right: 0px;
+    }
+    h3{
+        font-size: 35px;
+        text-align: center;
+    }
+    .productDescription{
+        font-weight: 300;
+        width: 100%;
+        font-size: 25px;
+    }
+}
