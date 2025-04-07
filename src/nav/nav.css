@@ -69,7 +69,7 @@
     cursor: pointer;
 }
 #dropdown{
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 50%;
     z-index: 1;
