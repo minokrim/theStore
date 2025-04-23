@@ -3,9 +3,10 @@
     padding-top: 0px;
     color: black;
     padding-bottom: 50px;
+    width: 100%;
 }
 .wishlist-title{
-padding-left: 50px;
+padding-left: 5rem;
 }
 .wishlist-title h3{
     font-size: 14px;
@@ -45,7 +46,7 @@ td{
     text-align: left;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 21rem;
     height: 100px;
     font-size: 17px;
     font-weight: 500;
@@ -93,4 +94,38 @@ button{
     font-weight: 600;
     cursor: pointer;
     box-shadow: black 1px 1px 1px 1px;
+}
+
+
+@media (max-width:600px){
+    .Wishlist-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .Wishlist-body>table{
+        border: 1px solid red;
+        flex-direction: row;
+        width:100%
+        
+    };
+    th{
+        flex-direction: column;
+        width: 10px;
+        border: 1px solid red;
+    }
+    thead{
+        display: flex;
+        border: 1px solid red;
+        align-items: left;
+        width: max-content;
+        
+    }
+    td{
+        gap: 0px;
+        flex-direction: column;
+        width: 50px;
+    }
+    tr{
+        flex-direction: column;
+    }
 }

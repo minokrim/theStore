@@ -6,6 +6,7 @@ import Nav from "../nav/nav";
 import { useParams } from "react-router-dom";
 import Suggested from "./suggestedProduct";
 import Footer from "../footer/footer";
+import Swal from 'sweetalert2';
 export default function Product(){
     const [product,setProduct]=useState(null)
     const [items,setItems]=useState([])
@@ -65,6 +66,11 @@ export default function Product(){
                 return newWishlist;
             }
         })
+        Swal.fire({
+            title: "Successfully added to wishlist!",
+            icon: "success",
+            draggable: true
+          });
     }
 
     function addToCart(){
@@ -85,6 +91,11 @@ export default function Product(){
             return newCart
             }
         })
+        Swal.fire({
+            title: "Successfully added to cart!",
+            icon: "success",
+            draggable: true
+          });
     }
 
     return <div>

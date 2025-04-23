@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
 import "../nav/dropdown.css"
+import { Link } from "react-router-dom";
 export function Dropdown(props){
     const [category,setCategory]=useState([])
 
@@ -25,6 +26,7 @@ export function Dropdown(props){
     return <div className="dropMain">
             {category.map((category)=>(
                 <div key={category.id} className="dropItem">
+                    <Link to={`/product/${category.id}/${category.category.id}`} className="link">
                     <section className="dropContent">
                         <img src={category.images[1] }alt="" />
                         <div>
@@ -32,6 +34,8 @@ export function Dropdown(props){
                         <p id="desc">{desclength(category.description)}</p>
                         </div>
                     </section>
+                    </Link>
+
                 </div>
             ))}
     </div>

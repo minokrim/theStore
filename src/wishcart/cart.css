@@ -67,3 +67,15 @@
     height: 60px;
     border-radius: 10px;
 }
+.close{
+    cursor: pointer;
+}
+.quantityCard>p{
+    cursor: pointer;
+}
+
+@media (max-width:660px){
+    .quantityCard{
+        border: 1px solid red;
+    }
+}

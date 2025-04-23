@@ -35,7 +35,7 @@ export default function Wishlist(){
                             <tr key={item.id}>
                                 <td className="prodDetails">
                                     <img src={close} alt="close button"  className="close"/>
-                                    <img src={item.image} alt="product image" className="prod-image"/>
+                                    <img src={item.image} alt="product" className="prod-image"/>
                                     <p>{item.title}</p>
                                 </td>
                                 <td>${item.price}.00</td>

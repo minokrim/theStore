@@ -80,7 +80,9 @@ export default function Nav() {
 <section className="navSecondSection">
   {categories.map((cat) => (
     <div key={cat.id} className="nav-item-with-dropdown" onMouseEnter={() => setDropdownId(cat.id)} onMouseLeave={() => setDropdownId(null)}>
+
       <h3> {cat.name} <img src={dropdownId === cat.id ? uarrow : darrow} alt="" className="arrow"/></h3>
+
 
       {dropdownId === cat.id && (
         <section id="dropdown" className={`dropdn class${cat.id}`}>
