@@ -53,9 +53,9 @@ export default function Nav() {
               onClick={() => setIsMobileNavOpen(true)}
             />
           </div>
-          <Link to="/signin">
+          {/* <Link to="/signin">
             <h2>SIGN IN</h2>
-          </Link>
+          </Link> */}
         </div>
       </section>
 

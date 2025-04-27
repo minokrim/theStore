@@ -1,7 +1,3 @@
-.quantity{
-    
-}
-
 .quantityCard{
     border: 0.1px solid grey;
     display: flex;
@@ -31,7 +27,7 @@
 }
 .checkoutImg{
     width: auto;
-    height: 500px;
+    height: 30rem;
 }
 .cartCheckout-body{
     width: 30%;
@@ -75,7 +71,14 @@
 }
 
 @media (max-width:660px){
-    .quantityCard{
-        border: 1px solid red;
+    .cartCheckout{
+        flex-direction: column;
+    }
+    .cartCheckout-body{
+        width: 90%;
+        margin-top: 5rem;
+    }
+    .checkoutImg{
+        height: 10rem;
     }
 }

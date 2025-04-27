@@ -15,9 +15,13 @@ const Component1=lazy(()=>import( "../home/home"));
 function Body(){
     return <div className="main">
         <Nav/>
+
         <h1>NEW RELEASES</h1>
+
         <Carousel/>
+
         <h2>Categories for you!</h2>
+        
         <div className="cat">
         <Categories/>
         </div>

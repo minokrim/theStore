@@ -32,7 +32,7 @@ export default function Wishlist(){
                 </thead>
                 <tbody>
                         {items.map((item) => (
-                            <tr key={item.id}>
+                            <tr key={item.id} className="itemDetails">
                                 <td className="prodDetails">
                                     <img src={close} alt="close button"  className="close"/>
                                     <img src={item.image} alt="product" className="prod-image"/>

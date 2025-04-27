@@ -120,19 +120,6 @@ export default function Cart(){
                 })
             }} />
         </PayPalScriptProvider>}
-            {/* <PayPalScriptProvider options={initialOptions}>
-            <PayPalButtons style={{ layout: "horizontal" }} createOrder={(data,actions)=>{
-                return actions.order.create({
-                    purchase_units:[
-                        {
-                            amount:{
-                                value:totalCost.toFixed(2)
-                            }
-                        }
-                    ]
-                })
-            }} />
-        </PayPalScriptProvider> */}
             </div>
         </section>
         <Footer/>

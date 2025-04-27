@@ -16,6 +16,15 @@
     padding: 0 0 50px 0;
 }
 
+@media screen  and (max-width:768px) {
+    .sec1{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen  and (max-width:600px) {
     .sec1{
         display: flex;

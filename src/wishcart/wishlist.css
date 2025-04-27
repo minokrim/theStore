@@ -19,7 +19,7 @@ padding-left: 5rem;
 }
 .close{
     width: auto;
-    height: 15px;
+    height: 1rem;
 }
 .prod-image{
     width: auto;
@@ -98,34 +98,35 @@ button{
 
 
 @media (max-width:600px){
-    .Wishlist-body{
-        display: flex;
-        flex-direction: column;
-    }
     .Wishlist-body>table{
-        border: 1px solid red;
-        flex-direction: row;
-        width:100%
-        
+        flex-direction: column;   
+        padding-left: 1rem
+     
     };
-    th{
+    table{
         flex-direction: column;
-        width: 10px;
-        border: 1px solid red;
     }
     thead{
+        display: none;
+        flex-direction: row;
+    }
+    tbody{
         display: flex;
-        border: 1px solid red;
-        align-items: left;
-        width: max-content;
-        
+        flex-direction: column;
+        gap:5rem;
+        align-items: center;
+        justify-content: center
     }
     td{
         gap: 0px;
-        flex-direction: column;
-        width: 50px;
+        flex-direction: row;
+        width: max-content;
+        gap: 1em;
     }
     tr{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+
     }
 }
