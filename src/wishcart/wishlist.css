@@ -97,15 +97,19 @@ button{
 }
 
 
-@media (max-width:600px){
-    .Wishlist-body>table{
-        flex-direction: column;   
-        padding-left: 1rem
-     
-    };
+@media (max-width:660px){
+    .Wishlist-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
     table{
         flex-direction: column;
+        width: 80%;
+        margin: 0px;
     }
+
     thead{
         display: none;
         flex-direction: row;
@@ -128,5 +132,8 @@ button{
         flex-wrap: wrap;
         width: 80%;
 
+    }
+    .prodDetails{
+        width: 100%;
     }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "../homebody/body.css"
 import { Suspense, lazy } from "react";
-import Carousel from "../carousel/carousel";
 import Categories from "../categories/categories";
 import Benefit from "../components/benfits";
 import price from "../assets/best-price.png"
@@ -10,6 +9,8 @@ import secure from "../assets/secure-shield.png"
 import truck from "../assets/truck.png"
 import Nav from "../nav/nav";
 import Footer from "../footer/footer";
+import Car from "../carousel/carousel2";
+
 const Component1=lazy(()=>import( "../home/home"));
 
 function Body(){
@@ -17,14 +18,14 @@ function Body(){
         <Nav/>
 
         <h1>NEW RELEASES</h1>
-
-        <Carousel/>
+        {/* <Car/> */}
 
         <h2>Categories for you!</h2>
-        
+
         <div className="cat">
         <Categories/>
         </div>
+        
         <section className="sec1">
         <Benefit
         img={truck}

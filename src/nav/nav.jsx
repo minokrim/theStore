@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "../nav/nav.css";
 import logo from "../images/logo.png";
-import cart from "../images/shopping-cart (1).png";
+import cart from "../images/cart2.png"
 import wish from "../images/wishlist.png";
 import darrow from "../images/down-arrow.png";
 import uarrow from "../images/up-arrow.png";
 import { Dropdown } from "./dropdown";
 import { Link } from "react-router-dom";
-import hamburger from "../images/hamburger.png";
-import hamburger2 from "../images/hamburgerwhite.png";
 
 const categories = [
   { id: 1, name: "Clothes" },
@@ -38,28 +36,18 @@ export default function Nav() {
         <img src={logo} alt="Logo" className="navlogo" />
         </Link>
         <div className="navAction">
-          <input type="text" placeholder="SEARCH..." />
           <div className="navicons">
             <Link to="/cart">
-            <img src={cart} alt="Cart" />
+            <img src={cart} alt="" />
             </Link>
             <Link to="/wishlist">
             <img src={wish} alt="Wishlist" />
             </Link>
-            <img
-              src={hamburger}
-              alt="Menu"
-              className="burger"
-              onClick={() => setIsMobileNavOpen(true)}
-            />
           </div>
-          {/* <Link to="/signin">
-            <h2>SIGN IN</h2>
-          </Link> */}
         </div>
       </section>
 
-      {isMobileNavOpen && (
+      {/* {isMobileNavOpen && (
         <div className="mobilenav" id="mobilenavigation">
           <section className="menucont">
             <img
@@ -75,7 +63,7 @@ export default function Nav() {
             ))}
           </section>
         </div>
-      )}
+      )} */}
 
 <section className="navSecondSection">
   {categories.map((cat) => (

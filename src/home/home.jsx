@@ -29,14 +29,13 @@ function Home() {
                 {products.map((product) => (
                     <div key={product.id} className="productBorder">
                         <Link to={`/product/${product.id}/${product.category.id}`}>
-                        <img src={loadingState?loading:product.images[0]} alt={product.title} 
+                        <img src={loadingState?loading:product.images[0]||product.images[1]||product.images[2]} alt={product.title} 
                         onError={(e) => { e.target.src = loading; }}/>
                         </Link>
                         <div className="productDetails">
                         <h3>{product.title}</h3>
                         <p>${product.price}</p>
                         </div>
-                        <p className="productCategory">{product.category.name}</p>
                     </div>
                 ))}
             </section>

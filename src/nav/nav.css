@@ -118,18 +118,27 @@
 }
 
 @media screen and (max-width:600px) {
+    .navmain{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
     .navFirstSection{
         padding: 0px;
-        width: 100%;
+        width: 90%;
         justify-content: space-between;
-        height: 50px;
+        align-items: center;
+        height: 4em;
     }
-    .navicons{
-        margin-right: 50px;
+    .navAction{
+        display: flex;
+        width: max-content;
+        align-items: center;
+        justify-content: flex-end;
     }
     .navFirstSection img{
         width: auto;
-        height: 30px;
+        height: 2em;
     }
     .navlogo{
         width: auto;

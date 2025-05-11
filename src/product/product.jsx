@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import "./product.css"
-import cart from "../images/shopping-cart (2).png"
 import wish from "../images/heart.png"
+import cartimg from "../images/cart.png"
 import Nav from "../nav/nav";
 import { useParams } from "react-router-dom";
 import Suggested from "./suggestedProduct";
@@ -117,7 +117,7 @@ export default function Product(){
                         <div className="productcart">
                             <p className="wishlist" onClick={addToWishlist}><img src={wish} alt="" /> Wishlist</p>
                             <hr />
-                            <p className="a2c" onClick={addToCart}><img src={cart} alt="" /> Add to cart</p>
+                            <p className="a2c" onClick={addToCart}><img src={cartimg} alt="" /> Add to cart</p>
                         </div>
                         <h5>{product.title}</h5>
                         <h4>${product.price}.00</h4>
