@@ -23,6 +23,8 @@
     gap: 30px;
     width: 40%;
     align-items: center;
+    justify-content: flex-end;
+
 }
 .navAction img{
     width: auto;
